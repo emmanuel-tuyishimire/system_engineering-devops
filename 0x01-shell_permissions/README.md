@@ -1,4 +1,4 @@
-0x01-shell_permissions
+0x01-shell_permissions:
 This directory contains my scripts for learning about Linux file permissions and user roles. 
 In this project, I am learning how to:
 * Switch users using `su`.
