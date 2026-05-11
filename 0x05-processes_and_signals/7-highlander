@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
 # A script that runs an infinite loop and traps the SIGTERM signal
 
-function invincible_handler() {
-    echo "I am invincible!!!"
-}
+trap 'echo "I am invincible!!!"' SIGTERM
 
-trap invincible_handler SIGTERM
-
-while true
-do
-    echo "To infinity and beyond"
-    sleep 2
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
 done
